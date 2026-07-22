@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Моя картинка</title>
+<meta charset="UTF-8">
+<title>Моя картинка</title>
 
-    <!-- Open Graph для Discord -->
-    <meta property="og:title" content="Моя картинка">
-    <meta property="og:description" content="Описание картинки">
-    <meta property="og:image" content="https://твой-ник.github.io/название-репозитория/image.png">
-    <meta property="og:url" content="https://твой-ник.github.io/название-репозитория/">
-    <meta property="og:type" content="website">
+<!-- Discord Open Graph -->
+<meta property="og:title" content="Моя картинка">
+<meta property="og:description" content="Красивое изображение">
+<meta property="og:image" content="https://ТВОЯ_ССЫЛКА/image.png">
+<meta property="og:type" content="website">
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #111827, #312e81);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    width: 350px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+p {
+    opacity: 0.8;
+}
+</style>
 
 </head>
 
 <body>
+
+<div class="card">
+    <img src="image.png">
+
     <h1>Моя картинка</h1>
-    <img src="image.png" width="500">
+    <p>Добро пожаловать ✨</p>
+</div>
+
 </body>
 </html>
